@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+  }
+  
+  .grid-container > * {
+    border-radius: 0px;
+  }
+  
+  .navbar {
+    grid-area: navbar;
+    padding: 0px;
+    top: 0;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .main {
+    grid-area: main;
+    overflow-y:hidden;
+    height: 100%;
+    background: linear-gradient(150deg,#b660ef ,#87cfce);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .grid-container {
+    display: grid;
+    gap: 0px;
+    grid-template:
+      "navbar" 50px
+      "main" auto
+  }
+  
+  @media (min-width: 900px) {
+    .grid-container {
+      grid-template:
+        "main  main  main" 90% 
+        "navbar navbar navbar" auto
+    }
+  }

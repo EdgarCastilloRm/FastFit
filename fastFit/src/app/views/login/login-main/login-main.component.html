@@ -1,0 +1,21 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>
+                <img src="assets/fastFit.svg" height=75%, width="75%">
+            </mat-card-title>
+        </mat-card-header>
+        <form class="example-form">
+            <mat-card-content>
+                <button (click)="signInGoogle()"  mat-stroked-button  class="google-login-btn">
+                    <i class="fa fa-google fa-2x" aria-hidden="true"></i>
+                    Login with Google
+                </button>
+                <button (click)="signInMS()" mat-stroked-button  class="google-login-btn">
+                    <i class="fa fa-windows fa-2x" aria-hidden="true"></i>
+                    Login with Microsoft
+                </button>
+            </mat-card-content>
+        </form>
+    </mat-card>
+</div>

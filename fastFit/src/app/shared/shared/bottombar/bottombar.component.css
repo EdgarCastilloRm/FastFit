@@ -1,0 +1,10 @@
+.bar{
+    font-size: x-large;
+    height: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.active {
+    background-color: #d5bbf8;
+}
