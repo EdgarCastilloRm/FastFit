@@ -11,5 +11,9 @@ export class MainHomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
+  selectWeatherOutfit():void{
+
+  }
 }
