@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialsModule } from './shared/angular-materials/angular-materials.module';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginModule } from './views/login/login.module';
 import { SharedModule } from './shared/shared/shared.module';
 import { HomeModule } from './views/home/home.module';
@@ -19,6 +23,10 @@ import { LikedModule } from './views/liked/liked.module';
   ],
   imports: [
     BrowserModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule,
+    FlexLayoutModule,
     LoginModule,
     HomeModule,
     AccountModule,

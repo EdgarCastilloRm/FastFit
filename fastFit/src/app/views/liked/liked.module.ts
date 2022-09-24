@@ -4,6 +4,7 @@ import { LikedComponent } from './liked/liked.component';
 import { MainLikedComponent } from './main-liked/main-liked.component';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { AngularMaterialsModule } from 'src/app/shared/angular-materials/angular-materials.module';
 
 
 
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    AngularMaterialsModule
   ]
 })
 export class LikedModule { }
