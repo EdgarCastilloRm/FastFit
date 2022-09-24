@@ -12,4 +12,8 @@ export class MainGarmentsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeClient(value: string){
+      console.log(value);
+  }
+
 }
