@@ -1,16 +1,55 @@
-<p>¿Para qué ocasión?</p>
-
 <div class="filters">
-    <div class="ocasion">
-    <h2>Ocasión</h2>
-    <button mat-raised-button color="primary">Formal</button>
-    <button mat-raised-button color="primary">Casual</button>
-    <button mat-raised-button color="primary">Deportivo</button>
-    </div>
-    <div class="clima">
-    <h2>Clima</h2>
-    <button mat-raised-button color="primary">Soleado</button>
-    <button mat-raised-button color="primary">Lluvioso</button>
-    <button mat-raised-button color="primary">Fresco</button>
-    </div>
+  <mat-card
+    style="width: 50%; display: block; margin-left: auto; margin-right: auto"
+  >
+    <mat-card-content>
+      <h2>Formality</h2>
+      <div style="text-align: center">
+        <img
+          src="assets/tuxedo.jpg"
+          style="width: 17%; height: 17%; margin: 1.5rem; margin-top: 0; margin-bottom: 0;"
+        />
+        <img
+          src="assets/casual.png"
+          style="width: 17%; height: 17%; margin: 1.5rem; margin-top: 0; margin-bottom: 0;"
+        />
+        <img
+          src="assets/deportiva.jpg"
+          style="width: 17%; height: 17%; margin: 1.5rem; margin-top: 0; margin-bottom: 0;"
+        />
+      </div>
+      <div style="text-align: center; font-size: large; margin-top: 0.5rem;">
+        <mat-radio-group [(ngModel)]="formality">
+          <mat-radio-button value=3 style="margin-right: 5rem;" color="primary">Formal</mat-radio-button>
+          <mat-radio-button value=2 style="margin-right: 5rem" color="primary">Casual</mat-radio-button>
+          <mat-radio-button value=1 color="primary">Sport</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <h2>Weather</h2>
+      <div style="text-align: center">
+        <img
+          src="assets/sun-sleep.png"
+          style="width: 17%; height: 17%; margin: 1.5rem; margin-top: 0; margin-bottom: 0;"
+        />
+        <img
+          src="assets/cloud_rain.png"
+          style="width: 17%; height: 17%; margin: 1.5rem; margin-top: 0; margin-bottom: 0;"
+        />
+        <img
+          src="assets/blue-snow-icon-8.png"
+          style="width: 17%; height: 17%; margin: 1.5rem; margin-top: 0; margin-bottom: 0;"
+        />
+      </div>
+      <div style="text-align: center; font-size: large; margin-top: 1rem;">
+        <mat-radio-group [(ngModel)]="weather">
+          <mat-radio-button value=2 style="margin-right: 6rem;" color="primary">Sunny</mat-radio-button>
+          <mat-radio-button value=1 style="margin-right: 6rem" color="primary">Rainy</mat-radio-button>
+          <mat-radio-button value=3 color="primary">Cold</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </mat-card-content>
+    <mat-card-actions style="text-align: right;">
+        <button mat-raised-button (click)="generateOtds()" color="primary" style="margin-right: 1.5rem; margin-bottom: 1.5rem; font-size: large;">Generate</button>
+    </mat-card-actions>
+  </mat-card>
 </div>

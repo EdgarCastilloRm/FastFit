@@ -64,7 +64,7 @@ export class LoginMainComponent implements OnDestroy {
         },
         localStorage.setItem('currentUser', JSON.stringify(this.basicInfo));
         localStorage.setItem('token', JSON.stringify(this.user.authToken));
-        this.router.navigate(['home']);
+        this.router.navigate(['generate']);
       }, error:(err) => {
         alert("Error while fetching data.");
       }

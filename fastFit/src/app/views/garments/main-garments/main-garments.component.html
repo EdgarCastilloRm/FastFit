@@ -1,28 +1,25 @@
-<p>User's Garments</p>
-
-<div class="select-menu">
-    <mat-form-field appearance="fill">
-        <mat-select placeholder="Tipo de Prenda" (selectionChange)="changeClient($event.value)">
-          <mat-option value="Top">Top</mat-option>
-          <mat-option value="Bottom">Bottom</mat-option>
-          <mat-option value="Shoes">Shoes</mat-option>
-        </mat-select>
-        <mat-hint align="end">Selecciona tipo de prenda</mat-hint>
-      </mat-form-field>
-</div>
-
 <div class="content">
-    <div fxLayout="row wrap" fxLayoutGap="16px grid">
-        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4,5,6,7]">
-            <mat-card class="mat-elevation-z4">
-                <mat-card-header>
-                    <mat-card-title>Outfit {{num}}</mat-card-title>
-                </mat-card-header>
-                <img mat-card-image src="./../assets/images/finopa.jpg">
-                <mat-card-actions>
-                    <button mat-button>Ver</button>
-                </mat-card-actions>
-            </mat-card>
-        </div>
+    <div style="padding: 2rem">
+      <div class="select-menu">
+        <mat-form-field appearance="fill" style=" padding-bottom: 1rem;">
+            <mat-select placeholder="Tipo de Prenda" (selectionChange)="changeClient($event)">
+              <mat-option value="1">Top</mat-option>
+              <mat-option value="2">Bottom</mat-option>
+              <mat-option value="3">Shoes</mat-option>
+            </mat-select>
+          </mat-form-field>
     </div>
-</div>
+      <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div
+          fxFlex="20%"
+          fxFlex.xs="100%"
+          fxFlex.sm="33%"
+          *ngFor="let num of dataIMG"
+        >
+          <mat-card class="mat-elevation-z4">   
+            <img mat-card-image src="assets/IMG/garments/{{num.img_path}}" style="height: 100%; width: 100%; padding: 1rem;">
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>

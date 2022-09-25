@@ -1,1 +1,15 @@
-<p>main-account works!</p>
+<div class="content">
+
+  <mat-card style="width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 13rem; padding-top: 3rem; padding-left: 3rem;">
+  <mat-card-content>
+    <div style="text-align: center; font-size: large;">
+    <p>User Name: {{userData.Users_Name}}</p>
+    <p>Last Name: {{userData.Last_Name}}</p>
+    <p>Email: {{userData.Email}}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions style="text-align: center; ">
+    <button mat-raised-button (click)="signOut()" style="background-color: rgb(177, 18, 18); color: white; font-size: 2rem; padding: 1rem; margin-bottom: 1rem ">Log Out</button>
+  </mat-card-actions>
+</mat-card>
+</div>

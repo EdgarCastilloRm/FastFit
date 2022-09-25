@@ -11,7 +11,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginModule } from './views/login/login.module';
 import { SharedModule } from './shared/shared/shared.module';
-import { HomeModule } from './views/home/home.module';
 import { AccountModule } from './views/account/account.module';
 import { GarmentsModule } from './views/garments/garments.module';
 import { GenerateModule } from './views/generate/generate.module';
@@ -28,7 +27,6 @@ import { LikedModule } from './views/liked/liked.module';
     MatButtonModule,
     FlexLayoutModule,
     LoginModule,
-    HomeModule,
     AccountModule,
     GarmentsModule,
     GenerateModule,

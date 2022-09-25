@@ -17,7 +17,7 @@ export class LoginGuard implements CanActivate {
     | boolean
     | UrlTree {
     if (localStorage.getItem('currentUser') != null && localStorage.getItem('token') != null) {
-      this.router.navigate(['home']);
+      this.router.navigate(['generate']);
       return false;
     } else {
       return true;

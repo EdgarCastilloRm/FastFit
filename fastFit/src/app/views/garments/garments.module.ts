@@ -18,7 +18,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     SharedModule,
     RouterModule,
     AngularMaterialsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
   ]
 })
 export class GarmentsModule { }
