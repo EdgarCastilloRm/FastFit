@@ -1,6 +1,6 @@
 export interface UserInfo {
-    id:             number;
-    users_name:     string;
-    last_name:      string;
-    email:          string;
+    ID:             number;
+    Users_Name:     string;
+    Last_Name:      string;
+    Email:          string;
 }
